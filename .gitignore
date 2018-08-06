@@ -1,0 +1,7 @@
+/spring-cloud-root/api-gateway/target/*
+/spring-cloud-root/config-client/target/*
+/spring-cloud-root/config-server/target/*
+/spring-cloud-root/eureka-consumer-feign-hystrix/target/*
+/spring-cloud-root/eureka-producer/target/*
+/spring-cloud-root/eureka-server/target/*
+/spring-cloud-root/turbine-stream/target/*
