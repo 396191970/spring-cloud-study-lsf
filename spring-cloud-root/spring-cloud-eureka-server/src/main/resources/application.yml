@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-server
+    name: spring-cloud-eureka-server
 server:
   port: 7000
 eureka:

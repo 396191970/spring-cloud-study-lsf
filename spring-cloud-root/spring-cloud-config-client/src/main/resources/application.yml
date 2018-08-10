@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-client
+    name: spring-cloud-config-client
   cloud:
     bus:
       trace:
