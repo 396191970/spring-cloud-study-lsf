@@ -88,13 +88,13 @@
 	</build>
 
 	<modules>
-		<module>eureka-consumer-feign-hystrix</module>
-		<module>eureka-producer</module>
-		<module>eureka-server</module>
-		<module>api-gateway</module>
-		<module>turbine-stream</module>
-		<module>config-client</module>
-		<module>config-server</module>
+		<module>spring-cloud-eureka-consumer-feign-hystrix</module>
+		<module>spring-cloud-eureka-producer</module>
+		<module>spring-cloud-eureka-server</module>
+		<module>spring-cloud-api-gateway</module>
+		<module>spring-cloud-turbine-stream</module>
+		<module>spring-cloud-config-server</module>
+		<module>spring-cloud-config-client</module>
 
 
 	</modules>
