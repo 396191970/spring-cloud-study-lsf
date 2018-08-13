@@ -6,7 +6,7 @@ spring:
       label: master
       discovery:
         enabled: true
-        service-id: config-server
+        service-id: SPRING-CLOUD-CONFIG-SERVER
 eureka:
   client:
     service-url:
