@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-cloud-zk-consumer-feign-hystrix
+  cloud:
+    zookeeper:
+      connect-string: 172.20.11.100:2181
