@@ -4,3 +4,5 @@ spring:
   cloud:
     zookeeper:
       connect-string: 172.20.11.100:2181
+      discovery:
+        enabled: true
