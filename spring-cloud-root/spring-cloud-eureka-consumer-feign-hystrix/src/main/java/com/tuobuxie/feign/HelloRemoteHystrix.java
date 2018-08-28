@@ -11,7 +11,7 @@ public class HelloRemoteHystrix implements HelloRemote {
 
     @Override
     public String hello(@RequestParam(value = "name") String name) {
-        return "Hello World!";
+        return "Hello World! hystrix";
     }
 
 }

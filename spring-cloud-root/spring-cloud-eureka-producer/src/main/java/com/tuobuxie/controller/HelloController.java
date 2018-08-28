@@ -1,22 +1,22 @@
 package com.tuobuxie.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import java.util.Date;
+
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
+import com.tuobuxie.interface1.HelloInterface;
 
 /**
  * @author: lishaofeng
  **/
 @RestController
-@RequestMapping("/hello")
-public class HelloController {
+public class HelloController  implements HelloInterface{
 
-    @GetMapping("/")
-    public String hello(@RequestParam String name) {
+	@Override
+	public String hello(String name) {
         return "Hello, " + name + " " + new Date();
-    }
+	}
+
+
 
 }
