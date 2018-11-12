@@ -1,6 +1,9 @@
 package com.tuobuxie.controller;
 
 import com.tuobuxie.feign.HelloRemote;
+
+import lombok.extern.apachecommons.CommonsLog;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RequestMapping("/hello")
 @RestController
+@CommonsLog
 public class HelloController {
 
     @Autowired
@@ -20,6 +24,7 @@ public class HelloController {
     @GetMapping("/{name}")
     public String index(@PathVariable("name") String name) {
 
+    	log.info("name:"+name);
         return helloRemote.hello(name + "!");
     }
 

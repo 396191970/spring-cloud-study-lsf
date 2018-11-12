@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-zk-turbine-stream
+
+
+
+  cloud:
+    zookeeper:
+      connect-string: 172.20.11.100:2181
