@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
  **/
 public interface HelloInterface {
 
+	/**
+	 *
+	 * @param name
+	 * @return
+	 */
 
     @GetMapping("/test/hello/")
     String hello(@RequestParam(value = "name") String name);

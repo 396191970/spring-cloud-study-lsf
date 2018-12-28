@@ -1,5 +1,5 @@
 server:
-  port: 50003
+  port: 50004
 
 management:
   endpoints:
@@ -13,7 +13,7 @@ management:
 
 
 turbine:
-  app-config: spring-cloud-zk-consumer-feign-hystrix ,spring-cloud-zk-producer  ##需要监控的服务名
+  app-config: spring-cloud-zk-producer, spring-cloud-zk-consumer-feign-spring-cloud ##需要监控的服务名
   aggregator:
     clusterConfig: default    ##需要监控的服务集群名
   clusterNameExpression: new String("default")

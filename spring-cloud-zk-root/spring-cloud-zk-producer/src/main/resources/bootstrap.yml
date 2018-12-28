@@ -6,4 +6,4 @@ spring:
 
   cloud:
     zookeeper:
-      connect-string: 172.20.11.100:2181
+      connect-string: 172.20.2.132:2181

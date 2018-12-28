@@ -1,8 +1,29 @@
 spring:
   application:
-    name: spring-cloud-zk-consumer-feign-hystrix
+    name: spring-cloud-zk-consumer-feign-spring-cloud
   cloud:
     zookeeper:
-      connect-string: 172.20.11.100:2181
+      connect-string: 172.20.2.132:2181
       discovery:
         enabled: true
+
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://localhost:9411/
+
+server:
+  port: 9003
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

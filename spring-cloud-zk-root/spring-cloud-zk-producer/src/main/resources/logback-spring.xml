@@ -59,7 +59,6 @@
 
     <springProfile name="!production">
         <logger name="com.myfee" level="DEBUG" />
-        <logger name="org.springframework.web" level="INFO"/>
         <root level="info">
 	        <appender-ref ref="stdout" />
 	        <appender-ref ref="dailyRollingFileAppender" />
