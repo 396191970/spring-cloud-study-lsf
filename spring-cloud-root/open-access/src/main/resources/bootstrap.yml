@@ -1,0 +1,42 @@
+server:
+  port: 50005
+
+spring:
+  application:
+    name: open-access
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/ # 指定 Eureka 注册中心的地址
+
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://172.20.2.131:9411/
+
+
+  profiles:
+     active: zk-dev
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+
+ribbon:
+  OkToRetryOnAllOperations: false #对所有操作请求都进行重试,默认false
+  ReadTimeout: 10000   #负载均衡超时时间，默认值5000
+  ConnectTimeout: 2000 #ribbon请求连接的超时时间，默认值2000
+  MaxAutoRetries: 0     #对当前实例的重试次数，默认0
+  MaxAutoRetriesNextServer: 1 #对切换实例的重试次数，默认1
